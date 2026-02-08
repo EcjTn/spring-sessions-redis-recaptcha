@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://host:port/db
+    username: postgres
+    password: passwordroot
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+
+  redis:
+    host: 127.0.0.1
+    port: 5379
+
+recaptcha:
+  secret: getOneFromGooglw
