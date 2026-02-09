@@ -31,6 +31,7 @@ public class AuthController {
     }
 
     @PostMapping("/login")
+    @ResponseStatus(HttpStatus.CREATED)
     public MessageResponseDto login(@RequestBody @Valid AuthLoginDto user, HttpServletRequest request) {
 
         Authentication userAuth = authService.login(user);
