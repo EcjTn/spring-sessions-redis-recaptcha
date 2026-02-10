@@ -45,4 +45,10 @@ public class AuthController {
         return new MessageResponseDto("Successfully logged in.");
     }
 
+    @DeleteMapping("/logout")
+    public MessageResponseDto logout(HttpServletRequest request) {
+        request.getSession().invalidate();
+        return new MessageResponseDto("Successfully logged out.");
+    }
+
 }
