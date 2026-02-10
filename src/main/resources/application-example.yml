@@ -14,4 +14,4 @@ spring:
     port: 5379
 
 recaptcha:
-  secret: getOneFromGooglw
+  secret: getOneFromGoogle
