@@ -7,11 +7,16 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
-      show-sql: true
+    show-sql: true
 
-  redis:
-    host: 127.0.0.1
-    port: 5379
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 5379
+
+  session:
+    store-type: redis
+    timeout: 30m
 
 recaptcha:
   secret: getOneFromGoogle
